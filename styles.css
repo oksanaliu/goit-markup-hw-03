@@ -9,6 +9,11 @@ body {
     color: #333;
 }
 
+.container {
+    padding: 0 15px;
+    /* Внутрішні відступи */
+}
+
 h1,
 h2,
 h3,
@@ -81,6 +86,11 @@ ul {
 .contact {
     font-style: normal;
     font-size: 14px;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .contact__link {
