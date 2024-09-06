@@ -9,11 +9,6 @@ body {
     color: #333;
 }
 
-.container {
-    padding: 0 15px;
-    /* Внутрішні відступи */
-}
-
 h1,
 h2,
 h3,
@@ -35,263 +30,196 @@ ul {
 .header {
     background-color: #f8f8f8;
     padding: 20px;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-}
-
 .nav__logo {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-transform: uppercase;
+    font-size: 24px;
+    color: #333;
     text-decoration: none;
-    color: #4D5AE5;
 }
 
 .studio {
-    color: #2E2F42;
+    color: #007bff;
 }
 
 .nav__list {
     display: flex;
+    gap: 20px;
 }
 
 .nav__link {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    line-height: 1.5;
-    font-weight: 500;
-    margin-left: 20px;
+    color: #333;
     text-decoration: none;
 }
 
-.nav__link:hover,
-.nav__link:focus {
-    color: #404bbf;
-    text-decoration: underline;
-}
-
-/* Contact */
 .contact {
-    font-style: normal;
-    font-size: 14px;
+    margin-top: 10px;
 }
 
-.address-list {
+.contact__list {
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 
 .contact__link {
+    color: #007bff;
     text-decoration: none;
-    color: #434455;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 }
 
-.contact__link:hover,
-.contact__link:focus {
-    color: #404bbf;
-    text-decoration: underline;
-}
-
-/* Main */
-.main {
-    padding: 20px;
-}
-
+/* Hero Section */
 .hero {
+    background: url('./images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
     text-align: center;
-    padding: 60px 20px;
-    background-color: #2e2f42;
-}
-
-.hero__title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    color: #ffffff;
-    margin-bottom: 20px;
 }
 
 .hero__button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    background-color: #4D5AE5;
+    background-color: #007bff;
     border: none;
-    border-radius: 5px;
+    color: #fff;
     padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: #404bbf;
+/* Features */
+.features {
+    padding: 60px 0;
 }
 
-/* Features */
 .features__title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #2E2F42;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .features__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .features__item {
-    flex: 1 1 calc(50% - 20px);
-    margin: 10px;
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .features__subtitle {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #2E2F42;
+    font-size: 24px;
     margin-bottom: 10px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
 }
 
 .features__text {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #434455;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 }
 
-/* Team */
+/* Team Section */
 .team {
-    background-color: #F4F4FD;
-    padding: 20px;
+    padding: 60px 0;
 }
 
 .team__title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    color: #2E2F42;
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .team__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .team__item {
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
     text-align: center;
 }
 
 .team__image {
+    width: 100%;
+    height: auto;
     border-radius: 50%;
-    width: 264px;
-    height: 264px;
 }
 
 .team__name {
-    font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    font-weight: 500;
-    color: #2E2F42;
     margin: 10px 0 5px;
 }
 
 .team__role {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #434455;
+    color: #666;
 }
 
-/* Portfolio */
+/* Portfolio Section */
 .portfolio {
-    background-color: #F4F4FD;
-    padding: 20px;
+    padding: 60px 0;
 }
 
 .portfolio__title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    color: #2E2F42;
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .portfolio__item {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+    position: relative;
 }
 
-.portfolio__image {
-    width: 360px;
-    height: auto;
+.portfolio__info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .portfolio__project-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #2E2F42;
-    margin: 10px 0 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .portfolio__project-type {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #434455;
+    font-size: 14px;
 }
 
 /* Footer */
 .footer {
-    background-color: #2E2F42;
-    color: #ffffff;
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 .footer__text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #F4F4FD;
-    letter-spacing: 0.02em;
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .features__list,
+    .team__list,
+    .portfolio__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
