@@ -89,11 +89,7 @@ button {
     padding: 0 15px;
 
     /* Socials */
-    .contact-info {
-        display: flex;
-        gap: 40px;
-        font-style: normal;
-    }
+    .contact-info {}
 
     .contact-list {
         display: flex;
