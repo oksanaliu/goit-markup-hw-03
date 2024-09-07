@@ -231,7 +231,7 @@ button {
 
 
 
-.visually-hidden {
+.section-services .services-title {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -240,6 +240,7 @@ button {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+    white-space: nowrap;
 }
 
 .services-title {
