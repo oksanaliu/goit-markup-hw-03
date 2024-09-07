@@ -391,8 +391,6 @@ button {
 
 
 /* #region Footer */
-
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -407,11 +405,18 @@ button {
     margin-bottom: 16px;
 }
 
+.footer-web {
+    color: var(--color-footer-text);
+}
+
 .footer-text {
+    max-width: 264px;
     text-align: center;
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-footer-text);
 }
+
+
 
 /* #endregion Footer */
