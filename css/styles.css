@@ -401,8 +401,8 @@ button {
 
 .footer-logo {
     display: inline-block !important;
-    font-family: var(--font-family-logo);
     color: var(--color-footer-logo);
+    margin-bottom: 16px;
 }
 
 .footer-web {
