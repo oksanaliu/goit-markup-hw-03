@@ -415,6 +415,10 @@ button {
     background-color: var(--color-footer-bg);
 }
 
+.footer-container {
+    max-width: 100%;
+}
+
 .footer-logo {
     display: inline-block;
     color: var(--color-footer-logo);
