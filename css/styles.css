@@ -248,7 +248,7 @@ button {
     border: 0;
 }
 
-.services-title {
+.service-title {
     margin-bottom: 8px;
 
 }
@@ -280,7 +280,7 @@ button {
 }
 
 .team-header {
-    margin-bottom: 8px;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
