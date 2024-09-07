@@ -97,16 +97,10 @@ button {
     .contact-list {
         display: flex;
         gap: 40px;
+        margin: 0;
+        padding: 0;
     }
 
-    .contact-list li {
-        margin-right: 40px;
-        /* Відступи між пунктами контактів */
-    }
-
-    .contact-list li:not(:last-child) {
-        margin-right: 0;
-    }
 
     .contact-link {
         font-size: var(--font-size-main);
@@ -237,10 +231,7 @@ button {
 
 .services-title {
     margin-bottom: 8px;
-    font-weight: var(--font-weight-normal);
     font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
 }
 
@@ -403,7 +394,7 @@ button {
 }
 
 .footer-logo {
-    display: inline-block !important;
+    display: inline-block;
     margin-bottom: 16px;
     font-family: var(--font-family-logo);
     font-weight: 700;
