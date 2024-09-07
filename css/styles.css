@@ -229,9 +229,7 @@ button {
     padding: 120px 0;
 }
 
-
-
-.section-services .services-title {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -240,7 +238,6 @@ button {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-    white-space: nowrap;
 }
 
 .services-title {
@@ -254,28 +251,41 @@ button {
 
 .service-title {
     margin-bottom: 8px;
-
+    font-size: 24px;
+    /* Задайте розмір шрифту заголовка */
+    color: var(--color-secondary);
 }
 
 .service-list {
     display: flex;
+    flex-wrap: wrap;
+    /* Дозволяє елементам переноситися на новий рядок при необхідності */
     gap: 24px;
+    justify-content: space-between;
+    /* Розподіляє простір між елементами */
 }
 
 .service-item {
-    display: inline-flex;
-    width: calc((100% - 72px) / 4);
-    align-items: center;
-    gap: 24px;
+    flex: 1 1 calc((100% - 72px) / 4);
+    /* Визначає ширину кожного елемента */
+    display: flex;
+    flex-direction: column;
+    /* Розміщує заголовок і параграф один під одним */
+    gap: 16px;
+    /* Відступ між заголовком і параграфом */
+    align-items: flex-start;
+    /* Вирівнює елементи по лівому краю */
 }
 
 .service-description {
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
+    color: var(--color-text);
 }
 
 /* #endregion Services */
+
 
 /* #region Team */
 .section-team {
