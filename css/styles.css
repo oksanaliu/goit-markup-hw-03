@@ -340,6 +340,7 @@ button {
 }
 
 .portfolio-content {
+    overflow: auto;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
@@ -359,7 +360,6 @@ button {
 
 .portfolio-category {
     margin-top: 0;
-
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
