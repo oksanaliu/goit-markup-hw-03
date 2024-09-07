@@ -139,10 +139,14 @@ button {
 
 .header-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* Р РѕР·С‚Р°С€РѕРІСѓС” РµР»РµРјРµРЅС‚Рё РѕРґРёРЅ РїС–Рґ РѕРґРЅРёРј */
     align-items: center;
+    /* Р¦РµРЅС‚СЂСѓС” РµР»РµРјРµРЅС‚Рё РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»С– */
     width: 100%;
+    /* Р—Р°Р±РµР·РїРµС‡СѓС” РїРѕРІРЅСѓ С€РёСЂРёРЅСѓ РєРѕРЅС‚РµР№РЅРµСЂР° */
     text-align: center;
+    /* Р¦РµРЅС‚СЂСѓС” С‚РµРєСЃС‚ */
 }
 
 .portfolio-container {
@@ -407,48 +411,38 @@ button {
 
 
 /* #region Footer */
-/* Стилі для футера */
 .footer {
-    padding: 100px 0;
-    /* Відступи всередині футера */
-    background-color: var(--color-footer-bg);
-}
-
-/* Стилі для контейнера */
-.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px 0;
+    background-color: var(--color-footer-bg);
 }
 
-/* Стилі для посилання */
-.footer-link {
+.footer-logo {
     display: inline-block;
-    /* Блочні властивості для посилання */
     color: var(--color-footer-logo);
     font-size: 18px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer-web {
+    color: var(--color-footer-text);
+}
+
+.footer-logo {
     font-family: var(--font-family-logo);
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 16px;
-    /* Відступ між посиланням та параграфом */
-    text-decoration: none;
-    /* Прибираємо підкреслення посилання */
 }
 
-.footer-highlight {
-    color: var(--color-footer-text);
-}
-
-/* Стилі для параграфа */
-.footer-desc {
+.footer-text {
     max-width: 264px;
-    /* Максимальна ширина тексту */
     text-align: center;
     color: var(--color-footer-text);
     font-size: 16px;
-}
 
+}
 
 /* #endregion Footer */
