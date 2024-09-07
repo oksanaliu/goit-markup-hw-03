@@ -225,6 +225,7 @@ button {
 /* #endregion Hero */
 
 /* #region Services */
+/* #region Services */
 .section-services {
     padding: 120px 0;
 }
@@ -247,44 +248,46 @@ button {
     line-height: 1.2;
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
+    text-align: center;
+    /* Центрування заголовка секції */
 }
 
 .service-title {
     margin-bottom: 8px;
-    font-size: 24px;
-    /* Задайте розмір шрифту заголовка */
-    color: var(--color-secondary);
+    text-align: center;
+    /* Центрування заголовка сервісу */
 }
 
 .service-list {
     display: flex;
-    flex-wrap: wrap;
-    /* Дозволяє елементам переноситися на новий рядок при необхідності */
     gap: 24px;
-    justify-content: space-between;
-    /* Розподіляє простір між елементами */
+    flex-wrap: wrap;
+    /* Дозволяє елементам переноситися на новий рядок при потребі */
+    justify-content: center;
+    /* Центрує елементи всередині контейнера */
 }
 
 .service-item {
-    flex: 1 1 calc((100% - 72px) / 4);
-    /* Визначає ширину кожного елемента */
     display: flex;
     flex-direction: column;
-    /* Розміщує заголовок і параграф один під одним */
+    /* Вертикальне розташування заголовка і параграфа */
+    align-items: center;
+    /* Центрує елементи по горизонталі */
+    width: calc((100% - 72px) / 4);
     gap: 16px;
-    /* Відступ між заголовком і параграфом */
-    align-items: flex-start;
-    /* Вирівнює елементи по лівому краю */
+    /* Відстань між заголовком і параграфом */
 }
 
 .service-description {
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
-    color: var(--color-text);
+    text-align: center;
+    /* Центрування тексту параграфа */
 }
 
 /* #endregion Services */
+
 
 
 /* #region Team */
