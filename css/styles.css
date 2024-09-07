@@ -28,6 +28,9 @@ body {
     font-family: var(--font-family-main);
     color: var(--color-text);
     background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1,
@@ -84,6 +87,8 @@ button {
 
 /* #region Common */
 .container {
+    position: absolute;
+
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -133,8 +138,13 @@ button {
 
 
 .header {
-    border-bottom: 1px solid #e7e9fc
-        /* РЎС‚РёР»С– РґР»СЏ С…РµРґРµСЂР° */
+
+    border-bottom: 1px solid #e7e9fc;
+    position: absolute;
+    width: 1440px;
+    height: 72px;
+    top: 0;
+    left: 0;
 }
 
 .header-container {
@@ -150,6 +160,7 @@ button {
 }
 
 .portfolio-container {
+
     display: flex;
     padding: 120px;
     align-items: center;
@@ -208,6 +219,15 @@ button {
 
 /* #region Hero */
 .section-hero {
+    position: absolute;
+    width: 1440px;
+    height: 600px;
+    top: 72px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 188px 0;
     background-color: var(--color-secondary);
 }
@@ -321,6 +341,12 @@ button {
 
 /* #region Team */
 .section-team {
+    position: absolute;
+    width: 1440px;
+    height: 732px;
+    top: 1016px;
+    left: 0;
+
     padding: 120px 0;
     background-color: #F4F4FD;
 }
@@ -382,6 +408,11 @@ button {
 
 /* #region Portfolio */
 .portfolio-section {
+    position: absolute;
+    width: 1128px;
+    height: 1000px;
+    top: 1868px;
+    left: 156px;
     padding: 120px 0;
 }
 
@@ -441,6 +472,11 @@ button {
 
 /* #region Footer */
 .footer {
+    position: absolute;
+    width: 1440px;
+    height: 312px;
+    top: 2988px;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
