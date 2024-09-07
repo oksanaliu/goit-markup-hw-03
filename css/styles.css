@@ -407,44 +407,48 @@ button {
 
 
 /* #region Footer */
+/* Стилі для футера */
 .footer {
-    max-width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 100px 0;
+    /* Відступи всередині футера */
     background-color: var(--color-footer-bg);
 }
 
-.footer-container {
-    max-width: 100%;
+/* Стилі для контейнера */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-logo {
+/* Стилі для посилання */
+.footer-link {
     display: inline-block;
+    /* Блочні властивості для посилання */
     color: var(--color-footer-logo);
     font-size: 18px;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.footer-web {
-    color: var(--color-footer-text);
-}
-
-.footer-logo {
     font-family: var(--font-family-logo);
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+    /* Відступ між посиланням та параграфом */
+    text-decoration: none;
+    /* Прибираємо підкреслення посилання */
 }
 
-.footer-text {
+.footer-highlight {
+    color: var(--color-footer-text);
+}
+
+/* Стилі для параграфа */
+.footer-desc {
     max-width: 264px;
+    /* Максимальна ширина тексту */
     text-align: center;
     color: var(--color-footer-text);
     font-size: 16px;
-
 }
+
 
 /* #endregion Footer */
