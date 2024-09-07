@@ -99,6 +99,10 @@ button {
         gap: 40px;
     }
 
+    .contact-list li:not(:last-child) {
+        margin-right: 40px;
+    }
+
     .contact-link {
         font-size: var(--font-size-main);
         line-height: var(--line-height-main);
@@ -143,6 +147,12 @@ button {
 .header {
     border-bottom: 1px solid #e7e9fc
         /* РЎС‚РёР»С– РґР»СЏ С…РµРґРµСЂР° */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .portfolio-container {
@@ -218,7 +228,6 @@ button {
 /* #region Services */
 .section-services {
     padding: 120px 0;
-    /* РЎС‚РёР»С– РґР»СЏ СЃРµРєС†С–С— РїРѕСЃР»СѓРі */
 }
 
 .services-title,
@@ -230,6 +239,18 @@ button {
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 
 .service-list {
     display: flex;
@@ -292,7 +313,8 @@ button {
 }
 
 .team-member-name {
-    margin-bottom: 8px font-size: 36px;
+    margin-bottom: 8px;
+    font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: var(--letter-spacing-normal);
