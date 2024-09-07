@@ -253,8 +253,9 @@ button {
 
 .service-title {
     margin-bottom: 8px;
-    text-align: center;
-    /* Центрування заголовка сервісу */
+    font-size: 24px;
+    /* Збільшує розмір заголовка сервісу для кращої видимості */
+    color: var(--color-secondary);
 }
 
 .service-list {
@@ -277,8 +278,8 @@ button {
     /* Ширина елемента сервісу */
     box-sizing: border-box;
     /* Включає padding і border у ширину */
-    margin: 0 12px;
-    /* Зовнішні відступи для кращого розміщення */
+    margin: 0;
+    /* Прибирає зовнішні відступи */
     text-align: center;
     /* Центрування тексту всередині елемента */
 }
