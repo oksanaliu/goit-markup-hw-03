@@ -28,9 +28,6 @@ body {
     font-family: var(--font-family-main);
     color: var(--color-text);
     background-color: var(--color-bg);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 h1,
@@ -87,8 +84,6 @@ button {
 
 /* #region Common */
 .container {
-    position: absolute;
-
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -138,29 +133,17 @@ button {
 
 
 .header {
-
-    border-bottom: 1px solid #e7e9fc;
-    position: absolute;
-    width: 1440px;
-    height: 72px;
-    top: 0;
-    left: 0;
+    border-bottom: 1px solid #e7e9fc
+        /* Р РЋРЎвЂљР С‘Р В»РЎвЂ“ Р Т‘Р В»РЎРЏ РЎвЂ¦Р ВµР Т‘Р ВµРЎР‚Р В° */
 }
 
 .header-container {
     display: flex;
-    flex-direction: column;
-    /* Розташовує елементи один під одним */
+    justify-content: space-between;
     align-items: center;
-    /* Центрує елементи по горизонталі */
-    width: 100%;
-    /* Забезпечує повну ширину контейнера */
-    text-align: center;
-    /* Центрує текст */
 }
 
 .portfolio-container {
-
     display: flex;
     padding: 120px;
     align-items: center;
@@ -177,7 +160,7 @@ button {
 
     gap: 40px;
 
-    /* РЎС‚РёР»С– РґР»СЏ РЅР°РІС–РіР°С†С–С— */
+    /* Р РЋРЎвЂљР С‘Р В»РЎвЂ“ Р Т‘Р В»РЎРЏ Р Р…Р В°Р Р†РЎвЂ“Р С–Р В°РЎвЂ РЎвЂ“РЎвЂ” */
 }
 
 .logo {
@@ -219,15 +202,6 @@ button {
 
 /* #region Hero */
 .section-hero {
-    position: absolute;
-    width: 1440px;
-    height: 600px;
-    top: 72px;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 188px 0;
     background-color: var(--color-secondary);
 }
@@ -249,6 +223,8 @@ button {
     padding: 120px 0;
 }
 
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -267,86 +243,35 @@ button {
     line-height: 1.2;
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
-    text-align: center;
-    /* Центрування заголовка секції */
 }
 
 .service-title {
     margin-bottom: 8px;
-    font-size: 24px;
-    /* Збільшує розмір заголовка сервісу для кращої видимості */
-    color: var(--color-secondary);
+
 }
 
 .service-list {
     display: flex;
-    flex-wrap: wrap;
-    /* Дозволяє елементам переноситися на новий рядок при потребі */
     gap: 24px;
-    /* Відстань між елементами */
-    justify-content: center;
-    /* Центрує елементи всередині контейнера */
 }
 
 .service-item {
-    display: flex;
-    flex-direction: column;
-    /* Вертикальне розташування заголовка і параграфа */
-    align-items: center;
-    /* Центрує елементи по горизонталі */
+    display: inline-flex;
     width: calc((100% - 72px) / 4);
-    /* Ширина елемента сервісу */
-    box-sizing: border-box;
-    /* Включає padding і border у ширину */
-    margin: 0;
-    /* Прибирає зовнішні відступи */
-    text-align: center;
-    /* Центрування тексту всередині елемента */
+    align-items: center;
+    gap: 24px;
 }
 
 .service-description {
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
-    text-align: center;
-    /* Центрування тексту параграфа */
-}
-
-/* Медіа-запити для адаптивності */
-@media (max-width: 1200px) {
-    .service-item {
-        width: calc((100% - 48px) / 3);
-        /* Менша ширина для менших екранів */
-    }
-}
-
-@media (max-width: 768px) {
-    .service-item {
-        width: calc((100% - 24px) / 2);
-        /* Ще менша ширина для мобільних екранів */
-    }
-}
-
-@media (max-width: 480px) {
-    .service-item {
-        width: 100%;
-        /* Занадто маленькі екрани, один елемент в рядку */
-    }
 }
 
 /* #endregion Services */
 
-
-
-
 /* #region Team */
 .section-team {
-    position: absolute;
-    width: 1440px;
-    height: 732px;
-    top: 1016px;
-    left: 0;
-
     padding: 120px 0;
     background-color: #F4F4FD;
 }
@@ -408,11 +333,6 @@ button {
 
 /* #region Portfolio */
 .portfolio-section {
-    position: absolute;
-    width: 1128px;
-    height: 1000px;
-    top: 1868px;
-    left: 156px;
     padding: 120px 0;
 }
 
@@ -472,11 +392,6 @@ button {
 
 /* #region Footer */
 .footer {
-    position: absolute;
-    width: 1440px;
-    height: 312px;
-    top: 2988px;
-    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
