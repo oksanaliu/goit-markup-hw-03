@@ -279,24 +279,33 @@ button {
     border-radius: 0 0 4px 4px;
 }
 
-.team-member {
+.team-member-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member-info {
     padding: 32px 0;
     text-align: center;
 }
 
-.team-name {
+.team-member-name {
     margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
+    text-align: center;
 }
 
-.team-role {
+.team-member-role {
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
+    text-align: center;
 }
+
 
 
 /* #endregion Team */
