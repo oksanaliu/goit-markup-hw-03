@@ -392,9 +392,6 @@ button {
 
 /* #region Footer */
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 100px 0;
     background-color: var(--color-footer-bg);
 }
@@ -402,27 +399,18 @@ button {
 .footer-logo {
     display: inline-block;
     color: var(--color-footer-logo);
-    font-size: 18px;
-    text-align: center;
     margin-bottom: 16px;
 }
 
 .footer-web {
+    display: inline-block;
     color: var(--color-footer-text);
-}
-
-.footer-logo {
-    font-family: var(--font-family-logo);
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .footer-text {
-    max-width: 264px;
-    text-align: center;
+    line-height: var(--line-height-main);
+    letter-spacing: var(--letter-spacing-normal);
     color: var(--color-footer-text);
-    font-size: 16px;
-
 }
 
 /* #endregion Footer */
