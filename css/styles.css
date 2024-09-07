@@ -312,13 +312,11 @@ button {
 /* #endregion Team */
 
 /* #region Portfolio */
-.section-portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    /* РЎС‚РёР»С– РґР»СЏ СЃРµРєС†С–С— РїРѕСЂС‚С„РѕР»С–Рѕ */
+.portfolio-section {
+    padding: 120px 0;
 }
 
-.portfolio-header {
+.portfolio-title {
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
@@ -332,9 +330,8 @@ button {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;
     column-gap: 24px;
-    align-items: center;
+    row-gap: 48px;
 }
 
 .portfolio-item {
@@ -346,10 +343,9 @@ button {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px
 }
 
-.portfolio-title {
+.portfolio-app-title {
     margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
@@ -369,6 +365,7 @@ button {
 }
 
 /* #endregion Portfolio */
+
 
 /* #region Footer */
 .footer {
