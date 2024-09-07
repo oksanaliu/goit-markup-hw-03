@@ -1,5 +1,3 @@
-...
-
 /* #region Variables */
 :root {
     /* Fonts */
@@ -32,34 +30,44 @@ body {
     background-color: var(--color-bg);
 }
 
-/* #endregion Base */
-
-/* #region Common */
-
-/* Socials */
-.contact-info {
-    font-style: normal;
-}
-
-.contact-list {
-    list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
-.contact-link {
-    font-size: var(--font-size-main);
-    line-height: var(--line-height-main);
-    letter-spacing: var(--letter-spacing-normal);
-    color: var(--color-text);
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--color-hover);
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-/* Buttons */
-.hero-button {
+address {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     background-color: var(--color-primary);
     font-family: var(--font-family-main);
     font-weight: var(--font-weight-normal);
@@ -70,23 +78,99 @@ body {
     cursor: pointer;
 }
 
-.hero-button:hover,
-.hero-button:focus {
-    background-color: var(--color-hover);
+
+/* #endregion */
+/* #endregion Base */
+
+/* #region Common */
+.container {
+    width: 1158px;
+    padding: 120px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    /* Socials */
+    .contact-info {
+
+        font-style: normal;
+    }
+
+    .contact-list {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+    }
+
+    .contact-link {
+        font-size: var(--font-size-main);
+        line-height: var(--line-height-main);
+        letter-spacing: var(--letter-spacing-normal);
+        color: var(--color-text);
+    }
+
+    .contact-link:hover,
+    .contact-link:focus {
+        color: var(--color-hover);
+    }
+
+    /* Buttons */
+    .hero-button {
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--color-primary);
+        font-family: var(--font-family-main);
+        font-weight: var(--font-weight-normal);
+        font-size: var(--font-size-main);
+        line-height: var(--line-height-main);
+        letter-spacing: 0.04em;
+        color: var(--color-bg);
+        cursor: pointer;
+    }
+
+    .hero-button:hover,
+    .hero-button:focus {
+        background-color: var(--color-hover);
+    }
+
+    /* Card set */
+    /* #endregion Common */
+
+    /* #region Header */
 }
 
-/* #endregion Common */
 
-/* #region Header */
 .header {
-    /* Стилі для хедера */
+    border-bottom: 1px solid #e7e9fc
+        /* Стилі для хедера */
+}
+
+.header-container {
+    display: flex;
+    padding: 120px;
+    align-items: center;
+    border-bottom: 110px;
+
 }
 
 .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-right: 156px;
+
+    gap: 40px;
+
     /* Стилі для навігації */
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-family: var(--font-family-logo);
     font-weight: 700;
     font-size: 18px;
@@ -94,20 +178,37 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-primary);
+    margin-right: 76px;
 }
 
 .logo-span {
     color: var(--color-secondary);
 }
 
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item {}
+
+.nav-link {
+    display: block;
+    padding: 24px 0;
+}
+
 /* #endregion Header */
 
 /* #region Hero */
 .section-hero {
+    padding: 188px 0;
     background-color: var(--color-secondary);
 }
 
 .hero-title {
+
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -119,16 +220,30 @@ body {
 
 /* #region Services */
 .section-services {
+    padding: 120px 0;
     /* Стилі для секції послуг */
 }
 
 .services-title,
 .service-title {
+    margin-bottom: 8px;
     font-weight: var(--font-weight-normal);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
+}
+
+.service-list {
+    display: flex;
+    gap: 24px;
+}
+
+.service-item {
+    display: inline-flex;
+    width: calc((100% - 72px) / 4);
+    align-items: center;
+    gap: 24px;
 }
 
 .service-description {
@@ -141,16 +256,25 @@ body {
 
 /* #region Team */
 .section-team {
+    padding: 120px 0;
     background-color: #F4F4FD;
 }
 
 .team-header {
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: var(--letter-spacing-normal);
     text-transform: capitalize;
     color: var(--color-secondary);
+}
+
+.team-list {
+    display: flex;
+    border-radius: 0px 0px 4px 4px;
+    align-items: center;
+    gap: 24px;
 }
 
 .team-item {
@@ -163,9 +287,12 @@ body {
     line-height: 1.2;
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-role {
+    text-align: center;
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
@@ -175,10 +302,13 @@ body {
 
 /* #region Portfolio */
 .section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
     /* Стилі для секції портфоліо */
 }
 
 .portfolio-header {
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -188,25 +318,33 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    align-items: center;
+    gap: 24px;
+}
+
 .portfolio-item {
+    width: calc((100% - 48px) / 3);
     background-color: var(--color-bg);
+
 }
 
 .portfolio-title {
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: var(--letter-spacing-normal);
     text-transform: capitalize;
     color: var(--color-secondary);
-
-
     font-weight: var(--font-weight-normal);
 }
 
 .portfolio-category {
     font-weight: var(--font-weight-normal);
-
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
@@ -217,10 +355,13 @@ body {
 
 /* #region Footer */
 .footer {
+    padding: 100px 0;
     background-color: var(--color-footer-bg);
 }
 
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
     font-family: var(--font-family-logo);
     font-weight: 700;
     font-size: 18px;
@@ -241,4 +382,3 @@ body {
 }
 
 /* #endregion Footer */
-...
