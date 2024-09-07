@@ -225,16 +225,7 @@ button {
 
 
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
+
 
 .services-title {
     margin-bottom: 8px;
@@ -397,7 +388,7 @@ button {
 }
 
 .footer-logo {
-    display: inline-block !important;
+    display: inline-block;
     color: var(--color-footer-logo);
     margin-bottom: 16px;
 }
