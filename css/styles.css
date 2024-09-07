@@ -216,7 +216,7 @@ button {
 /* #endregion Hero */
 
 /* #region Services */
-.section-services {
+.service {
     padding: 120px 0;
     /* Стилі для секції послуг */
 }
@@ -230,6 +230,8 @@ button {
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
 }
+
+.features__list {}
 
 .service-list {
     display: flex;
@@ -252,7 +254,7 @@ button {
 /* #endregion Services */
 
 /* #region Team */
-.section-team {
+.team {
     padding: 120px 0;
     background-color: #F4F4FD;
 }
@@ -273,6 +275,8 @@ button {
     align-items: center;
     gap: 24px;
 }
+
+.team__info {}
 
 .team-item {
     background-color: var(--color-bg);
