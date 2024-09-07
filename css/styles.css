@@ -225,7 +225,6 @@ button {
 /* #endregion Hero */
 
 /* #region Services */
-/* #region Services */
 .section-services {
     padding: 120px 0;
 }
@@ -260,9 +259,10 @@ button {
 
 .service-list {
     display: flex;
-    gap: 24px;
     flex-wrap: wrap;
     /* Дозволяє елементам переноситися на новий рядок при потребі */
+    gap: 24px;
+    /* Відстань між елементами */
     justify-content: center;
     /* Центрує елементи всередині контейнера */
 }
@@ -274,8 +274,13 @@ button {
     align-items: center;
     /* Центрує елементи по горизонталі */
     width: calc((100% - 72px) / 4);
-    gap: 16px;
-    /* Відстань між заголовком і параграфом */
+    /* Ширина елемента сервісу */
+    box-sizing: border-box;
+    /* Включає padding і border у ширину */
+    margin: 0 12px;
+    /* Зовнішні відступи для кращого розміщення */
+    text-align: center;
+    /* Центрування тексту всередині елемента */
 }
 
 .service-description {
@@ -286,7 +291,30 @@ button {
     /* Центрування тексту параграфа */
 }
 
+/* Медіа-запити для адаптивності */
+@media (max-width: 1200px) {
+    .service-item {
+        width: calc((100% - 48px) / 3);
+        /* Менша ширина для менших екранів */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        width: calc((100% - 24px) / 2);
+        /* Ще менша ширина для мобільних екранів */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        width: 100%;
+        /* Занадто маленькі екрани, один елемент в рядку */
+    }
+}
+
 /* #endregion Services */
+
 
 
 
