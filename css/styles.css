@@ -248,6 +248,15 @@ button {
     border: 0;
 }
 
+.services-title {
+    margin-bottom: 8px;
+    font-weight: var(--font-weight-normal);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing-normal);
+    color: var(--color-secondary);
+}
+
 .service-title {
     margin-bottom: 8px;
 
