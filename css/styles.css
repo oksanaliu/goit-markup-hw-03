@@ -139,8 +139,14 @@ button {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* Розташовує елементи один під одним */
     align-items: center;
+    /* Центрує елементи по горизонталі */
+    width: 100%;
+    /* Забезпечує повну ширину контейнера */
+    text-align: center;
+    /* Центрує текст */
 }
 
 .portfolio-container {
