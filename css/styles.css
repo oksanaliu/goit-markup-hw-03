@@ -346,15 +346,16 @@ button {
 }
 
 .portfolio-app-title {
+    text-align: center;
     margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: var(--letter-spacing-normal);
     text-transform: capitalize;
     color: var(--color-secondary);
     font-weight: var(--font-weight-normal);
 }
+
 
 .portfolio-category {
     font-weight: var(--font-weight-normal);
