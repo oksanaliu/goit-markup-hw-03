@@ -89,10 +89,6 @@ button {
     padding: 0 15px;
 
     /* Socials */
-    .contact-info {
-
-        font-style: normal;
-    }
 
     .contact-list {
         display: flex;
@@ -246,6 +242,15 @@ button {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.services-title {
+    margin-bottom: 8px;
+    font-weight: var(--font-weight-normal);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing-normal);
+    color: var(--color-secondary);
 }
 
 .service-title {
