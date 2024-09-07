@@ -408,7 +408,6 @@ button {
 
 .footer-text {
     max-width: 264px;
-    letter-spacing: var(--letter-spacing-normal);
     color: var(--color-footer-text);
 }
 
