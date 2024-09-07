@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <!-- Підключення нормалізації стилів -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
@@ -28,48 +29,39 @@
             </ul>
         </address>
     </header>
+
     <main class="main">
         <section class="hero">
-            <h1 class="hero__title visually-hidden">Effective Solutions for Your Business</h1>
+            <h1 class="hero__title">Effective Solutions for Your Business</h1>
             <button type="button" class="hero__button">Order Service</button>
         </section>
         <section class="features container">
-            <h2 class="features__title">Features</h2>
-            <div class="features__list">
-                <div class="features__item">
-                    <div class="features__info">
-                        <h3 class="features__subtitle">Strategy</h3>
-                        <p class="features__text">Our goal is to identify the business problem to walk away with the
-                            perfect
-                            and creative solution.</p>
-                    </div>
-                </div>
-                <div class="features__item">
-                    <div class="features__info">
-                        <h3 class="features__subtitle">Punctuality</h3>
-                        <p class="features__text">Bring the key message to the brand's audience for the best price
-                            within
-                            the shortest possible time.</p>
-                    </div>
-                </div>
-                <div class="features__item">
-                    <div class="features__info">
-                        <h3 class="features__subtitle">Diligence</h3>
-                        <p class="features__text">Research and confirm brands that present the strongest digital growth
-                            opportunities and minimize risk.</p>
-                    </div>
-                </div>
-                <div class="features__item">
-                    <div class="features__info">
-                        <h3 class="features__subtitle">Technologies</h3>
-                        <p class="features__text">Design practice focused on digital experiences. We bring forth a deep
-                            passion for problem-solving.</p>
-                    </div>
-                </div>
-            </div>
+            <h2 class="visually-hidden">Features</h2>
+            <ul class="features__list">
+                <li class="features__item">
+                    <h3 class="features__subtitle">Strategy</h3>
+                    <p class="features__text">Our goal is to identify the business problem to walk away with the perfect
+                        and creative solution.</p>
+                </li>
+                <li class="features__item">
+                    <h3 class="features__subtitle">Punctuality</h3>
+                    <p class="features__text">Bring the key message to the brand's audience for the best price within
+                        the shortest possible time.</p>
+                </li>
+                <li class="features__item">
+                    <h3 class="features__subtitle">Diligence</h3>
+                    <p class="features__text">Research and confirm brands that present the strongest digital growth
+                        opportunities and minimize risk.</p>
+                </li>
+                <li class="features__item">
+                    <h3 class="features__subtitle">Technologies</h3>
+                    <p class="features__text">Design practice focused on digital experiences. We bring forth a deep
+                        passion for problem-solving.</p>
+                </li>
+            </ul>
         </section>
         <section class="team container">
-            <h2 class="team__title">Our Team</h2>
+            <h2 class="visually-hidden">Our Team</h2>
             <ul class="team__list">
                 <li class="team__item">
                     <img src="./images/guerrero.jpg" alt="Mark Guerrero" class="team__image" width="360">
@@ -102,8 +94,7 @@
             </ul>
         </section>
         <section class="portfolio container">
-            <h2 class="portfolio__title">Our Portfolio</h2>
-            <!-- Row 1 -->
+            <h2 class="visually-hidden">Our Portfolio</h2>
             <ul class="portfolio__list">
                 <li class="portfolio__item">
                     <img src="./images/BankingApp.jpg" alt="Banking App" width="360">
@@ -113,7 +104,7 @@
                     </div>
                 </li>
                 <li class="portfolio__item">
-                    <img src="./images/CashlessPayment.jpg" alt="Cashless" width="360">
+                    <img src="./images/CashlessPayment.jpg" alt="Cashless Payment" width="360">
                     <div class="portfolio__info">
                         <h3 class="portfolio__project-title">Cashless Payment</h3>
                         <p class="portfolio__project-type">Marketing</p>
@@ -124,27 +115,6 @@
                     <div class="portfolio__info">
                         <h3 class="portfolio__project-title">Meditation App</h3>
                         <p class="portfolio__project-type">App</p>
-                    </div>
-                </li>
-            </ul>
-            <!-- Row 2 -->
-            <ul class="portfolio__list">
-                <li class="portfolio__item">
-                    <div class="portfolio__info">
-                        <h3 class="portfolio__project-title">Taxi Service</h3>
-                        <p class="portfolio__project-type">Marketing</p>
-                    </div>
-                </li>
-                <li class="portfolio__item">
-                    <div class="portfolio__info">
-                        <h3 class="portfolio__project-title">Screen Illustrations</h3>
-                        <p class="portfolio__project-type">Design</p>
-                    </div>
-                </li>
-                <li class="portfolio__item">
-                    <div class="portfolio__info">
-                        <h3 class="portfolio__project-title">Online Courses</h3>
-                        <p class="portfolio__project-type">Marketing</p>
                     </div>
                 </li>
             </ul>
