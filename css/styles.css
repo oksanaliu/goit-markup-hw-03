@@ -99,8 +99,13 @@ button {
         gap: 40px;
     }
 
-    .contact-list li:not(:last-child) {
+    .contact-list li {
         margin-right: 40px;
+        /* Відступи між пунктами контактів */
+    }
+
+    .contact-list li:not(:last-child) {
+        margin-right: 0;
     }
 
     .contact-link {
@@ -230,8 +235,7 @@ button {
     padding: 120px 0;
 }
 
-.services-title,
-.service-title {
+.services-title {
     margin-bottom: 8px;
     font-weight: var(--font-weight-normal);
     font-size: 20px;
@@ -399,7 +403,7 @@ button {
 }
 
 .footer-logo {
-    display: inline-block;
+    display: inline-block !important;
     margin-bottom: 16px;
     font-family: var(--font-family-logo);
     font-weight: 700;
