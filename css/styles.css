@@ -235,7 +235,7 @@ a {
     line-height: 1.2;
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
-    text-align: center;
+    text-align: left;
 }
 
 .visually-hidden {
