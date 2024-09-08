@@ -432,9 +432,7 @@ a {
 
 /* #region Footer */
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     padding: 100px 0;
     background-color: var(--color-footer-bg);
 }
