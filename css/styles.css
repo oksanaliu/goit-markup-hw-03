@@ -96,7 +96,6 @@ a {
     width: Hug (169px)px;
     padding: 16px 32px 16px 32px;
     gap: 10px;
-    border-radius: 4px 0px 0px 0px;
     color: var(--color-bg);
     cursor: pointer;
 }
@@ -135,6 +134,8 @@ a {
     align-items: center;
 }
 
+
+
 .nav-list {
     display: flex;
     align-items: center;
@@ -142,6 +143,7 @@ a {
 }
 
 .nav-link {
+    padding: 24px 0;
     font-size: 16px;
 }
 
