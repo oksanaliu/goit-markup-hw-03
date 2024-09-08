@@ -466,10 +466,9 @@ a {
 
 .footer-text {
     max-width: 264px;
-    text-align: center;
+    text-align: left;
     color: var(--color-footer-text);
     font-size: 16px;
-
 }
 
 /* #endregion Footer */
