@@ -111,32 +111,38 @@ a {
 
 /* #region Header */
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
+}
 
 .header {
     border-bottom: 1px solid #e7e9fc;
     padding: 24px 156px;
 }
 
-.container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* .header-container {
+.header-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    text-align: center;
-} */
+}
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
+}
 
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link {
+    font-size: 16px;
 }
 
 .logo {
@@ -157,21 +163,14 @@ a {
     color: var(--color-secondary);
 }
 
-.nav-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.nav-link {
-    display: block;
-    padding: 24px 0;
-    font-size: 16px;
-}
-
 .contact-list {
     display: flex;
     gap: 40px;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
 }
 
 .contact-link {
