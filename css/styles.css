@@ -121,11 +121,11 @@ a {
 }
 
 .header-container {
-
-    position: relative;
-    margin-top: 156px;
-    max-width: 1158px;
+    width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
+
 }
 
 .nav {
