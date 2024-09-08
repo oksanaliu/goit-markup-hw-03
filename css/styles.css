@@ -19,6 +19,11 @@
     --font-weight-normal: 500;
     --letter-spacing-normal: 0.02em;
     --line-height-main: 1.5;
+
+    --items: 4;
+    --intent-col: 32px;
+    --indent-row: var(--indent-col);
+
 }
 
 /* #endregion Variables */
@@ -62,7 +67,20 @@ a {
     color: currentColor;
 }
 
-button {
+
+/* #endregion */
+/* #endregion Base */
+
+/* #region Common */
+
+
+/* Socials */
+
+
+
+
+/* Buttons */
+.hero-button {
     display: block;
     min-width: 169px;
     height: 56px;
@@ -71,107 +89,60 @@ button {
     background-color: var(--color-primary);
     font-family: var(--font-family-main);
     font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-main);
+    font-size: 16px;
     line-height: var(--line-height-main);
     letter-spacing: 0.04em;
+    text-align: center;
+    width: Hug (169px)px;
+    padding: 16px 32px 16px 32px;
+    gap: 10px;
+    border-radius: 4px 0px 0px 0px;
     color: var(--color-bg);
     cursor: pointer;
 }
 
-
-/* #endregion */
-/* #endregion Base */
-
-/* #region Common */
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-
-    /* Socials */
-
-
-    .contact-link {
-        font-size: var(--font-size-main);
-        line-height: var(--line-height-main);
-        letter-spacing: var(--letter-spacing-normal);
-        color: var(--color-text);
-    }
-
-    .contact-link:hover,
-    .contact-link:focus {
-        color: var(--color-hover);
-    }
-
-    /* Buttons */
-    .hero-button {
-        display: block;
-        min-width: 169px;
-        height: 56px;
-        border: none;
-        border-radius: 4px;
-        background-color: var(--color-primary);
-        font-family: var(--font-family-main);
-        font-weight: var(--font-weight-normal);
-        font-size: var(--font-size-main);
-        line-height: var(--line-height-main);
-        letter-spacing: 0.04em;
-        color: var(--color-bg);
-        cursor: pointer;
-    }
-
-    .hero-button:hover,
-    .hero-button:focus {
-        background-color: var(--color-hover);
-    }
-
-    /* Card set */
-    /* #endregion Common */
-
-    /* #region Header */
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--color-hover);
 }
+
+/* Card set */
+/* #endregion Common */
+
+/* #region Header */
 
 
 .header {
-    border-bottom: 1px solid #e7e9fc
-        /* Р РЋРЎвЂљР С‘Р В»РЎвЂ“ Р Т‘Р В»РЎРЏ РЎвЂ¦Р ВµР Т‘Р ВµРЎР‚Р В° */
+    border-bottom: 1px solid #e7e9fc;
+    padding: 24px 156px;
 }
 
-.header-container {
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* .header-container {
     display: flex;
     flex-direction: column;
-    /* Р РѕР·С‚Р°С€РѕРІСѓС” РµР»РµРјРµРЅС‚Рё РѕРґРёРЅ РїС–Рґ РѕРґРЅРёРј */
     align-items: center;
-    /* Р¦РµРЅС‚СЂСѓС” РµР»РµРјРµРЅС‚Рё РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»С– */
     width: 100%;
-    /* Р—Р°Р±РµР·РїРµС‡СѓС” РїРѕРІРЅСѓ С€РёСЂРёРЅСѓ РєРѕРЅС‚РµР№РЅРµСЂР° */
     text-align: center;
-    /* Р¦РµРЅС‚СЂСѓС” С‚РµРєСЃС‚ */
-}
-
-.portfolio-container {
-    display: flex;
-    padding: 120px;
-    align-items: center;
-    border-bottom: 110px;
-
-}
+} */
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
-    margin-right: 156px;
 
-    gap: 40px;
-
-    /* Р РЋРЎвЂљР С‘Р В»РЎвЂ“ Р Т‘Р В»РЎРЏ Р Р…Р В°Р Р†РЎвЂ“Р С–Р В°РЎвЂ РЎвЂ“РЎвЂ” */
 }
 
 .logo {
     display: flex;
     align-items: center;
+    height: 24px;
     font-family: var(--font-family-logo);
     font-weight: 700;
     font-size: 18px;
@@ -192,16 +163,27 @@ button {
     gap: 40px;
 }
 
-.nav-item {}
-
 .nav-link {
     display: block;
     padding: 24px 0;
+    font-size: 16px;
 }
 
 .contact-list {
     display: flex;
     gap: 40px;
+}
+
+.contact-link {
+    font-size: var(--font-size-main);
+    line-height: var(--line-height-main);
+    letter-spacing: var(--letter-spacing-normal);
+    color: var(--color-text);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--color-hover);
 }
 
 /* #endregion Header */
@@ -354,6 +336,14 @@ button {
 /* #region Portfolio */
 .portfolio-section {
     padding: 120px 0;
+}
+
+.portfolio-container {
+    display: flex;
+    padding: 120px;
+    align-items: center;
+    border-bottom: 110px;
+
 }
 
 .portfolio-title {
