@@ -213,7 +213,6 @@ a {
 
 .hero-title {
 
-    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -232,7 +231,7 @@ a {
 .services-container {
     position: relative;
     margin-top: 156px;
-    max-width: 1128px;
+    max-width: 1158px;
     margin: 0 auto;
 }
 
