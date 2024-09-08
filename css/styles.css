@@ -262,7 +262,7 @@ a {
 
 .service-list {
     display: flex;
-    gap: 24px;
+    gap: 12px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -272,7 +272,6 @@ a {
     flex-direction: column;
     align-items: flex-start;
     width: calc((100% - 72px) / 4);
-    gap: 8px;
 }
 
 .service-title {
