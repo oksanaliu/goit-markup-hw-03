@@ -224,20 +224,8 @@ a {
 /* #endregion Hero */
 
 /* #region Services */
-/* #region Services */
 .section-services {
     padding: 120px 0;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
 }
 
 .services-title {
@@ -248,41 +236,51 @@ a {
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
     text-align: center;
-    /* Р¦РµРЅС‚СЂСѓРІР°РЅРЅСЏ Р·Р°РіРѕР»РѕРІРєР° СЃРµРєС†С–С— */
 }
 
-.service-title {
-    margin-bottom: 8px;
-    text-align: center;
-    /* Р¦РµРЅС‚СЂСѓРІР°РЅРЅСЏ Р·Р°РіРѕР»РѕРІРєР° СЃРµСЂРІС–СЃСѓ */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    overflow: hidden;
 }
 
 .service-list {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    /* Р”РѕР·РІРѕР»СЏС” РµР»РµРјРµРЅС‚Р°Рј РїРµСЂРµРЅРѕСЃРёС‚РёСЃСЏ РЅР° РЅРѕРІРёР№ СЂСЏРґРѕРє РїСЂРё РїРѕС‚СЂРµР±С– */
     justify-content: center;
-    /* Р¦РµРЅС‚СЂСѓС” РµР»РµРјРµРЅС‚Рё РІСЃРµСЂРµРґРёРЅС– РєРѕРЅС‚РµР№РЅРµСЂР° */
+    margin: 0 auto;
 }
 
 .service-item {
     display: flex;
     flex-direction: column;
-    /* Р’РµСЂС‚РёРєР°Р»СЊРЅРµ СЂРѕР·С‚Р°С€СѓРІР°РЅРЅСЏ Р·Р°РіРѕР»РѕРІРєР° С– РїР°СЂР°РіСЂР°С„Р° */
     align-items: center;
-    /* Р¦РµРЅС‚СЂСѓС” РµР»РµРјРµРЅС‚Рё РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»С– */
     width: calc((100% - 72px) / 4);
-    gap: 16px;
-    /* Р’С–РґСЃС‚Р°РЅСЊ РјС–Р¶ Р·Р°РіРѕР»РѕРІРєРѕРј С– РїР°СЂР°РіСЂР°С„РѕРј */
+    max-width: 1128px;
+    height: 104px;
+    opacity: 1;
+    gap: 8px;
+}
+
+.service-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
 .service-description {
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
-    text-align: center;
-    /* Р¦РµРЅС‚СЂСѓРІР°РЅРЅСЏ С‚РµРєСЃС‚Сѓ РїР°СЂР°РіСЂР°С„Р° */
+    text-align: left;
 }
 
 /* #endregion Services */
