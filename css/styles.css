@@ -407,7 +407,7 @@ a {
 }
 
 .portfolio-app-title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
@@ -420,7 +420,6 @@ a {
 
 .portfolio-category {
     margin-top: 0;
-    font-weight: var(--font-weight-normal);
     font-size: var(--font-size-main);
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-normal);
