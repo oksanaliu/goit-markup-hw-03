@@ -297,6 +297,13 @@ a {
     background-color: #F4F4FD;
 }
 
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .team-header {
     margin-bottom: 72px;
     font-size: 36px;
