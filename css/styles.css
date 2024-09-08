@@ -304,6 +304,7 @@ a {
 }
 
 .team-header {
+    max-width: 496px;
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
