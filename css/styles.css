@@ -244,6 +244,7 @@ a {
     letter-spacing: var(--letter-spacing-normal);
     color: var(--color-secondary);
     text-align: center;
+    visibility: hidden;
 }
 
 .visually-hidden {
@@ -269,11 +270,9 @@ a {
 .service-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: calc((100% - 72px) / 4);
-    max-width: 100%;
     gap: 8px;
-    padding: 0 16px;
 }
 
 .service-title {
