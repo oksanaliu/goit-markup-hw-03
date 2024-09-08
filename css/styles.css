@@ -365,14 +365,18 @@ a {
 
 /* #region Portfolio */
 .portfolio-section {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-container {
+
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
     display: flex;
-    padding: 120px;
     align-items: center;
-    border-bottom: 110px;
 
 }
 
