@@ -297,10 +297,10 @@ a {
 }
 
 .team-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
 }
 
 .team-header {
