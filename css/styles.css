@@ -94,7 +94,6 @@ a {
     letter-spacing: 0.04em;
     text-align: center;
     padding: 16px 32px 16px 32px;
-    gap: 10px;
     color: var(--color-bg);
     cursor: pointer;
 }
@@ -192,6 +191,16 @@ a {
 .section-hero {
     padding: 188px 0;
     background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 
 .hero-title {
