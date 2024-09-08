@@ -216,6 +216,7 @@ a {
 }
 
 .hero-title {
+    max-width: 496px;
 
     font-size: 56px;
     line-height: 1.07;
