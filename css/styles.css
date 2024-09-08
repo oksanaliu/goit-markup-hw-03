@@ -121,10 +121,11 @@ a {
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+
+    position: relative;
+    margin-top: 156px;
+    max-width: 1158px;
+    margin: 0 auto;
 }
 
 .nav {
