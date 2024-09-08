@@ -439,6 +439,13 @@ a {
     background-color: var(--color-footer-bg);
 }
 
+.footer-container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
+}
+
 .footer-logo {
     display: inline-block;
     color: var(--color-footer-logo);
